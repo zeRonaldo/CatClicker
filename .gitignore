@@ -1,0 +1,5 @@
+# Editor rules
+.sublime
+
+# Api rules
+node_modules/*
