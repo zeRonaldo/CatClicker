@@ -131,24 +131,36 @@ main.interactive {
     min-height: 300px;
     height: 50vh;
     margin: 0 auto;
-    background: #000; }
+    background-color: #000;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url("../res/img/1.gif"); }
   main.interactive .counter {
     background-color: #333;
     width: 70%;
     max-width: 800px;
-    margin: 0 auto; }
-  main.interactive .number {
-    color: #000;
-    text-align: center;
-    font-family: serif;
-    margin: 0;
-    padding-top: 10px;
-    text-shadow: -1px -1px 0 #ffffff, 1px -1px 0 #ffffff, -1px 1px 0 #ffffff, 1px 1px 0 #ffffff;
-    letter-spacing: 6px; }
-  main.interactive .phrase {
-    margin: 0;
-    padding: 10px 0;
-    color: #fff;
-    text-align: center;
-    font-size: 1em;
-    font-family: serif; }
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    main.interactive .counter .number {
+      color: #000;
+      text-align: center;
+      font-family: "Press Start 2P", cursive;
+      margin: 0;
+      padding-top: 10px;
+      text-shadow: -1px -1px 0 #ffffff, 1px -1px 0 #ffffff, -1px 1px 0 #ffffff, 1px 1px 0 #ffffff;
+      letter-spacing: 6px; }
+    main.interactive .counter .phrase {
+      margin: 0 auto;
+      padding: 15px 0;
+      color: #fff;
+      text-align: center;
+      font-size: 1em;
+      font-family: Helvetica, Arial, sans-serif;
+      width: 100%; }
