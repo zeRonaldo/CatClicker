@@ -13,7 +13,7 @@ let catClicker = function (){
  };
 
 catClicker.prototype.loadImg = function() {
-	let api_key = '3q2HdIJkyrwyzbpPqPsVDzSOE8XL0uC0';
+	let api_key = '{SUA_CHAVE_DE_API}';
 	let jsonObject = fetch('http://api.giphy.com/v1/gifs/random?tag=cute+kitten&api_key='+api_key,{
 		Method: 'GET'
 	}).then((response) => response.json())
