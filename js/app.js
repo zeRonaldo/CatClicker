@@ -14,8 +14,8 @@ let catClicker = function (){
 
 catClicker.prototype.loadImg = function() {
 	let api_key = '3q2HdIJkyrwyzbpPqPsVDzSOE8XL0uC0';//Substitua por sua chave de api
-	let jsonObject = fetch('https://crossorigin.me/http://api.giphy.com/v1/gifs/random?tag=cute+kitten&api_key='+api_key,{
-		Method: 'GET', mode: 'no-cors'
+	let jsonObject = fetch('http://api.giphy.com/v1/gifs/random?tag=cute+kitten&api_key='+api_key,{
+		Method: 'GET', 'mode': 'no-cors'
 	}).then((response) => response.json())
     .then((json) => {
        // do stuff with responseJSON here...
